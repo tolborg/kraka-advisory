@@ -34,11 +34,10 @@ a {
 
 
 
+
+
 .left {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 2em;
   background-color: #fff;
   border-bottom: solid 1px #DC651D;
 }
@@ -48,15 +47,12 @@ a {
 }
 
 .right {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 2em;
 }
 
 .logo {
-  height: 4em;
-  margin-bottom: 3em;
+  height: 3em;
+  margin-bottom: 2em;
 }
 
 .logo img {
@@ -66,7 +62,7 @@ a {
 
 
 .slogan {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .slogan p {
@@ -131,20 +127,16 @@ a {
   }
 
   .right, .left {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding: 4em;
   }
 
   .left-inside {
 
-    /* background-color: #999; */
-    /* margin-right: 30%; */
   }
 
   .left::before {
     content: "";
     width: 300%;
-    /* height: 100px; */
     background-color: #fff;
     position: absolute;
     top: 0;
@@ -154,8 +146,11 @@ a {
   }
 
   .right-inside {
-    /* max-width: 30em; */
-    /* background-color: #999; */
-    /* margin-left: 10%; */
+
+  }
+
+  .logo {
+    height: 4em;
+    /* margin-bottom: 2em; */
   }
 }
