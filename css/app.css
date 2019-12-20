@@ -1,0 +1,161 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: #F3F3F3;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 1em;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: #1C00FF;
+}
+
+
+
+
+.left {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #fff;
+  border-bottom: solid 1px #DC651D;
+}
+
+.left-inside {
+  max-width: 30em;
+}
+
+.right {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.logo {
+  height: 4em;
+  margin-bottom: 3em;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+
+.slogan {
+  margin-bottom: 3em;
+}
+
+.slogan p {
+  font-size: 2.75em;
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+.website-teaser {
+
+}
+
+.website-teaser p {
+  font-size: 1.5em;
+  color: #999;
+}
+
+
+.contact {
+
+}
+
+.contact p {
+  margin-bottom: 0.75em;
+}
+
+.contact p:first-child {
+  margin-bottom: 1.5em;
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+  html {
+    height: 100vh;
+  }
+  body {
+    height: 100vh;
+  }
+  .sides {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .left {
+    flex: 1.618;
+    border-bottom: none;
+    border-right: solid 1px #DC651D;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .right, .left {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .left-inside {
+
+    /* background-color: #999; */
+    /* margin-right: 30%; */
+  }
+
+  .left::before {
+    content: "";
+    width: 300%;
+    /* height: 100px; */
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+
+  }
+
+  .right-inside {
+    /* max-width: 30em; */
+    /* background-color: #999; */
+    /* margin-left: 10%; */
+  }
+}
